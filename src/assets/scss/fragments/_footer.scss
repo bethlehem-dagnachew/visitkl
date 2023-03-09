@@ -1,0 +1,14 @@
+// Footer
+footer{
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $pure-white;
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0
+}

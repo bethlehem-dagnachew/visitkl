@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "Eina01";
+  src: url("@/assets/fonts/Eina01-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Eina01";
+  src: url("@/assets/fonts/Eina01-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Eina01";
+  src: url("@/assets/fonts/Eina01-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Eina02";
+  src: url("@/assets/fonts/Eina02-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Eina02";
+  src: url("@/assets/fonts/Eina02-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Eina02";
+  src: url("@/assets/fonts/Eina03-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Eina03";
+  src: url("@/assets/fonts/Eina02-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Eina03";
+  src: url("@/assets/fonts/Eina03-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Eina03";
+  src: url("@/assets/fonts/Eina03-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Eina04";
+  src: url("@/assets/fonts/Eina04-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.header-nav{
+  display: flex;
+}
+
+.header-menu {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: transparent;
+  z-index: 10;
+  background-image: url("@/assets/images/main_background.png"), radial-gradient(101.05% 46.71% at 50% 50.86%, #E21118 0%, #AE0F13 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header-menu .back {
+  position: absolute;
+  left: 30px;
+}
+
+.header__left-menu {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 60px;
+}
+.header__left-menu img {
+  margin-right: 16px;
+}
+.header__left-menu p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 19.8px;
+  color: #FFFFFF;
+  text-align: left;
+  margin-top: 18px;
+  margin-bottom: 12px;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.header__right {
+  position: absolute;
+  right: 30px;
+}
+
+.logout {
+  position: relative;
+  left: 40%;
+}
+
+.main-menu-page {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.content-menu {
+  width: 100%;
+  height: fit-content;
+  background-color: #FFFFFF;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 102px;
+}
+.content__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 51.75px;
+  color: #E51C21;
+  text-align: center;
+  margin-top: 34px;
+  margin-bottom: 55px;
+}
+.content__links {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content__links--grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 6px;
+  grid-row-gap: 10px;
+}
+.content__links--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content__links--item h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 18px;
+  color: #252525;
+  text-align: center;
+  margin-top: 25px;
+}
+.content__links--flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 62px;
+  margin-top: 50px;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=menu.css.map */

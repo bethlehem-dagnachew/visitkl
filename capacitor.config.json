@@ -1,0 +1,6 @@
+{
+  "appId": "com.visit.kl",
+  "appName": "visitkl",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

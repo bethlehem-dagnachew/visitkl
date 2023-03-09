@@ -1,0 +1,67 @@
+.content{
+    width: 100vw;
+    height: fit-content;
+    background-color: $pure-white;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+    &__top{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 24px;
+        gap: 27.5px;
+        margin-bottom: 30px;
+        &--title{
+            margin-left: 20px;
+        }
+        &--links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+    }
+}
+// Reels
+.reels{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    &__item{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        &--img{
+            width: 100%;
+            height: 100%;
+        }
+        &--corner{
+            width: auto;
+            height: auto;
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            &__number{
+                font-family: 'Poppins', sans-serif;
+                font-weight:  600;
+                font-size: 1.2rem;
+                line-height: 18px;
+                color: $pure-white;
+                text-align: left;
+            }
+        }
+    }
+}

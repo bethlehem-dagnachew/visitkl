@@ -1,0 +1,209 @@
+header{
+    width: 100vw;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+}
+main{
+    min-height: calc(100vh - 180px);
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    min-width: 320px;
+}
+
+// Main
+.content{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../src/images/kl_login_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+    &__cover{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $mere-black;
+        opacity: 20%;
+    }
+    &__container{
+        width: 364px;
+        height: 475px;
+        background: linear-gradient(180deg, rgba(22, 26, 30, 0.14) 11.09%, #161A1E 62.79%);
+        backdrop-filter: blur(2px);
+        border-radius: 30px;
+        border: none;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding-top: 24px;
+        padding-left: 42px;
+        padding-right: 42px;
+        padding-bottom: 42;
+        &--title{
+            font-family: 'Poppins', sans-serif;
+            font-weight:  400;
+            font-size: 1.9rem;
+            line-height: 28.5px;
+            color: $pure-white;
+            margin-bottom: 20px;
+        }
+        &--input{
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+            span{
+                font-family: 'Open Sans', sans-serif;
+                font-weight:  400;
+                font-size: 1.3rem;
+                line-height: 17.7px;
+                color: $pure-white;
+                margin-bottom: 12px;
+            }
+            &__wrapper{
+                position: relative;
+                input{
+                    width: 280px;
+                    height: 48px;
+                    border: 1px solid #CAE4F1;
+                    border-radius: 10px;
+                    background-color: $pure-white;
+                    margin-bottom: 16px;
+                    padding-left: 46px;
+                }
+                img{
+                    position: absolute;
+                    z-index: 10;
+                    left: 20px;
+                    top: calc(50% - 18px);
+                }
+            }
+        }
+        &--checkbox{
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            align-items: left;
+            margin-bottom: 24px;
+            &__container{
+                margin-right: 10px;
+                border: none;
+                border-radius: 5px;
+                width: 18px;
+                height: 18px;
+                position: relative;
+                &--box{
+                    appearance: none;
+                    border-radius: 5px;
+                }
+                &--cover{
+                    width: 18px;
+                    height: 18px;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    background-color: $cherry-red;
+                    border-radius: 5px;
+                }
+            }
+            span{
+                font-family: 'Open Sans', sans-serif;
+                font-weight:  700;
+                font-size: 1.2rem;
+                line-height: 16.34px;
+                color: $pure-white;
+            }         
+        }
+        &--submit{
+            width: 262px;
+            height: 50px;
+            border: none;
+            border-radius: 12.33px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $cherry-red;
+            color: $pure-white;
+            font-family: 'Poppins', sans-serif;
+            font-weight:  600;
+            font-size: 1.42rem;
+            line-height: 21.33px;
+            margin-bottom: 10px;
+        }
+        &--forgot{
+            font-family: 'Open Sans', sans-serif;
+            font-weight:  700;
+            font-size: 1.5rem;
+            line-height: 20.43px;
+            color: $cherry-red;
+            text-align: center;
+        }
+        &--links{
+            font-family: 'Poppins', sans-serif;
+            font-weight:  500;
+            font-size: 1.2rem;
+            line-height: 18px;
+            color: $pure-white;
+            text-align: center;
+            margin-top: 18px;
+            a{
+                font-family: 'Poppins', sans-serif;
+                font-weight:  600;
+                font-size: 1.2rem;
+                line-height: 18px;
+                color: $cherry-red;
+                text-align: center;
+                text-decoration: underline;
+                text-decoration-color: $pure-white;
+                text-underline-offset: 4px;
+            }
+        }
+    }
+}
+.content__container--input__wrapper input::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:  400;
+    font-size: 1.5rem;
+    line-height: 20px;
+    color: #718193;
+}
+.content__container--checkbox__container--cover:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.content__container--checkbox__container input:checked ~ .content__container--checkbox__container--cover:after{
+    display: block;
+}
+.content__container--checkbox__container .content__container--checkbox__container--cover:after{
+    left: 6px;
+    bottom: 5px;
+    width: 4px;
+    height: 10px;
+    border: solid $pure-white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

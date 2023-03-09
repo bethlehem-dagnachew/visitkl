@@ -1,0 +1,151 @@
+.content{
+    width: 100vw;
+    height: fit-content;
+    background-color: $pure-white;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+    &__top{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 24px;
+        gap: 75.5px;
+        margin-bottom: 30px;
+        &--title{
+            margin-left: 20px;
+        }
+        &--links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            &__item{
+                &--grey{
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+// Form
+.form__container{
+    width: 85%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 20px;
+    gap: 25px;
+    &--text{
+        font-family: 'Eina02', sans-serif;
+        font-weight:  normal;
+        font-size: 1.3rem;
+        line-height: 19px;
+        color: $mere-black;
+        text-align: left;
+    }
+    &--fill{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        span{
+            height: fit-content;
+            font-family: 'Eina02', sans-serif;
+            font-weight:  600;
+            font-size: 1.5rem;
+            color: $pure-black;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        input{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid $cherry-red;
+            background-color: transparent;
+        }
+        textarea{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid $cherry-red;
+            background-color: transparent;
+        }
+    }
+    &--submit{
+        width: 128px;
+        height: 31px;
+        text-align: center;
+        background-color: #E51C21;
+        border-radius: 4px;
+        border: none;
+        box-shadow: 0px 3px 4px rgb(0 0 0 / 25%);
+        font-family: "Eina02", sans-serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+        line-height: 16px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+.form__container--file{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    span{
+        height: fit-content;
+        font-family: 'Eina02', sans-serif;
+        font-weight:  600;
+        font-size: 1.5rem;
+        color: $pure-black;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-bottom: 6px;
+    }
+    &__cover{
+        width: 297.71px;
+        height: 171px;
+        background-image: url("../src/icons/upload_file.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 10px;
+        input{
+            display: none;
+        }
+    }
+}
+.form__container--fill textarea:focus{
+    outline: none;
+}
+.form__container--fill textarea::placeholder{
+    height: fit-content;
+    font-family: 'Eina02', sans-serif;
+    font-weight:  normal;
+    font-size: 1.4rem;
+    color: $darkest-grey;
+    text-align: left;
+}
+.form__container--fill input::placeholder{
+    height: fit-content;
+    font-family: 'Eina02', sans-serif;
+    font-weight:  normal;
+    font-size: 1.4rem;
+    color: $darkest-grey;
+    text-align: left;
+}
+.form__container--fill input:focus{
+    outline: none;
+}

@@ -1,0 +1,105 @@
+.content{
+    width: 100vw;
+    height: fit-content;
+    background-color: $pure-white;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+    &__top{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 24px;
+        gap: 10px;
+        margin-bottom: 30px;
+        padding-left: 40px;
+        &--text{
+            h3{
+                font-family: 'Poppins', sans-serif;
+                font-weight:  600;
+                font-size: 1.3rem;
+                line-height: 19.8px;
+                color: $mere-black;
+                text-align: left;
+            }
+            p{
+                font-family: 'Poppins', sans-serif;
+                font-weight:  500;
+                font-size: 0.9rem;
+                line-height: 13.5px;
+                color: $mere-black;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.picture{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    &__main{
+        position: relative;
+        &--img{
+            width: 100vw;
+            height: 100%;
+        }
+        &--corner{
+            position: absolute;
+            top: 20px;
+            right: 16px;
+        }
+    }
+    &__bottom{
+        width: 100%;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 15px;
+        margin-bottom: 16px;
+        &--social{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            position: absolute;
+            left: 32px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &__interactions{
+        margin-left: 32px;
+        margin-bottom: 12px;
+    }
+    &__description{
+        font-family: 'Poppins', sans-serif;
+        font-weight:  500;
+        font-size: 1.2rem;
+        line-height: 18px;
+        color: $mere-black;
+        text-align: left;
+        margin-left: 32px;
+        margin-bottom: 5px;
+    }
+    &__date{
+        font-family: 'Poppins', sans-serif;
+        font-weight:  600;
+        font-size: 0.9rem;
+        line-height: 13.5px;
+        color: $darkest-grey;
+        text-align: left;
+        margin-left: 32px;
+    }
+}

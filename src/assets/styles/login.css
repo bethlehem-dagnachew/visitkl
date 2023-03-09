@@ -1,0 +1,286 @@
+@font-face {
+  font-family: "Eina01";
+  src: url("@/assets/fonts/Eina01-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Eina01";
+  src: url("@/assets/fonts/Eina01-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Eina01";
+  src: url("@/assets/fonts/Eina01-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Eina02";
+  src: url("@/assets/fonts/Eina02-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Eina02";
+  src: url("@/assets/fonts/Eina02-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Eina02";
+  src: url("@/assets/fonts/Eina03-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Eina03";
+  src: url("@/assets/fonts/Eina02-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Eina03";
+  src: url("@/assets/fonts/Eina03-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Eina03";
+  src: url("@/assets/fonts/Eina03-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Eina04";
+  src: url("@/assets/fonts/Eina04-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Eina01", sans-serif;
+  scroll-behavior: smooth;
+  min-height: 100%;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background: #F4F4F4;
+  background-attachment: fixed;
+}
+
+header {
+  width: 100vw;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  z-index: 10;
+  position: absolute;
+  top: 0px;
+}
+
+main {
+  min-height: calc(100vh - 180px);
+  width: 100vw;
+  max-width: 100vw;
+  box-sizing: border-box;
+  min-width: 320px;
+}
+
+.content-login {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("@/assets/images/kl_login_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+}
+.content__cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #252525;
+  opacity: 20%;
+}
+.content__container {
+  width: 364px;
+  height: 475px;
+  background: linear-gradient(180deg, rgba(22, 26, 30, 0.14) 11.09%, #161A1E 62.79%);
+  backdrop-filter: blur(2px);
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-top: 24px;
+  padding-left: 42px;
+  padding-right: 42px;
+  padding-bottom: 42;
+}
+.content__container--title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 28.5px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.content__container--input {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+.content__container--input span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 17.7px;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+.content__container--input__wrapper {
+  position: relative;
+}
+.content__container--input__wrapper input {
+  width: 280px;
+  height: 48px;
+  border: 1px solid #CAE4F1;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  margin-bottom: 16px;
+  padding-left: 46px;
+}
+.content__container--input__wrapper img {
+  position: absolute;
+  z-index: 10;
+  left: 20px;
+  top: calc(50% - 18px);
+}
+.content__container--checkbox {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: left;
+  margin-bottom: 24px;
+}
+.content__container--checkbox__container {
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 18px;
+  height: 18px;
+  position: relative;
+}
+.content__container--checkbox__container--box {
+  appearance: none;
+  border-radius: 5px;
+}
+.content__container--checkbox__container--cover {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #E51C21;
+  border-radius: 5px;
+}
+.content__container--checkbox span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 16.34px;
+  color: #FFFFFF;
+}
+.content__container--submit {
+  width: 262px;
+  height: 50px;
+  border: none;
+  border-radius: 12.33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E51C21;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.42rem;
+  line-height: 21.33px;
+  margin-bottom: 10px;
+}
+.content__container--forgot {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 20.43px;
+  color: #E51C21;
+  text-align: center;
+}
+.content__container--links {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 18px;
+}
+.content__container--links a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 18px;
+  color: #E51C21;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #FFFFFF;
+  text-underline-offset: 4px;
+}
+
+.content__container--input__wrapper input::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 20px;
+  color: #718193;
+}
+
+.content__container--checkbox__container--cover:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.content__container--checkbox__container input:checked ~ .content__container--checkbox__container--cover:after {
+  display: block;
+}
+
+.content__container--checkbox__container .content__container--checkbox__container--cover:after {
+  left: 6px;
+  bottom: 5px;
+  width: 4px;
+  height: 10px;
+  border: solid #FFFFFF;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,58 @@
+.content{
+    width: 100vw;
+    height: fit-content;
+    background-color: $pure-white;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 65px;
+    &__top{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 10px;
+        margin-bottom: 12px;
+        &--title{
+            font-family: 'Poppins', sans-serif;
+            font-weight:  600;
+            font-size: 2.5rem;
+            line-height: 29.5px;
+            color: $cherry-red;
+        }
+    }
+}
+
+// Questions
+.questions{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    &--item{
+        width: 318px;
+        height: 48px;
+        background: $blue-visitKL;
+        border-radius: 20px;
+        border: 1px solid $blue-default;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        p{
+            width: 250px;
+            height: auto;
+            font-family: 'Poppins', sans-serif;
+            font-weight:  600;
+            font-size: 1.2rem;
+            line-height: 15.48px;
+            color: $pure-white;
+        }
+    }
+}

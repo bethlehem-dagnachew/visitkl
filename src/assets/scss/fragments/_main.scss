@@ -1,0 +1,103 @@
+// Head
+header{
+    width: 100vw;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+}
+main{
+    min-height: calc(100vh - 180px);
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    min-width: 320px;
+}
+
+// Main
+.content{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../src/images/kl_login_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+    &__cover{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $mere-black;
+        opacity: 20%;
+    }
+    &__container{
+        width: 364px;
+        height: 284px;
+        background: linear-gradient(180deg, rgba(22, 26, 30, 0.14) 11.09%, #161A1E 62.79%);
+        backdrop-filter: blur(2px);
+        border-radius: 30px;
+        border: none;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &--title{
+            font-family: 'Montserrat', sans-serif;
+            font-weight:  400;
+            font-size: 1.42rem;
+            line-height: 18px;
+            color: $pure-white;
+            text-align: center;
+            margin-bottom: 6.5px;
+        }
+        &--subtitle{
+            font-family: 'Poppins', sans-serif;
+            font-weight:  600;
+            font-size: 3rem;
+            line-height: 36.39px;
+            color: $pure-white;
+            text-align: center;
+            margin-bottom: 6.5px;
+        }
+        &--text{
+            width: 272px;
+            font-family: 'Poppins', sans-serif;
+            font-weight:  600;
+            font-size: 1.42rem;
+            line-height: 28.21px;
+            color: $pure-white;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        &--button{
+            width: 262px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: $cherry-red;
+            border: none;
+            border-radius: 21.33px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1.42rem;
+            line-height: 21.33px;
+            color: $pure-white;
+            transition: all 0.25s ease-in-out;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+// Colors
+$biru: #1D3B83;
+$kuning: #FFFB05;
+$gradient-tulisan: linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, #181818 100%);
+$pure-white: #FFFFFF;
+$pure-black: #000000;
+$cherry-red: #E51C21;
+$mere-black: #252525;
+$blue-visitKL: #005BAA;
+$light-grey: #E7E7E7;
+$darker-grey: #C1C1C1;
+$darkest-grey: #9C9C9C;
+$gradient-white: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 10.89%, #FFFFFF 68.15%);
+$gradient-hitam: linear-gradient(180deg, rgba(22, 26, 30, 0.6) 0%, #161A1E 45.31%);
+$gradient-linear-red: linear-gradient(180deg, #EE8D8F 0%, #E51C21 100%);
+$blue-default: #157AD8;
+$gradient-linear-blue: linear-gradient(180deg, #005BAA 0%, #8EC1EE 100%);
+$radial-dark-red: radial-gradient(101.05% 46.71% at 50% 50.86%, #E21118 0%, #AE0F13 100%);
+$gradient-linear-dark-red: linear-gradient(360deg, #E21118 2.43%, #AE0F13 95.84%);
+$left-shadow: -6px 0px 10px rgba(0, 0, 0, 0.8);
+$bottom-shadow: 0px 4.01667px 4.01667px rgba(0, 0, 0, 0.5);
+
+// Fonts
+
+@font-face{
+    font-family: 'Eina01';
+    src: url('../fonts/Eina01-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face{
+    font-family: 'Eina01';
+    src: url('../fonts/Eina01-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+@font-face{
+    font-family: 'Eina01';
+    src: url('../fonts/Eina01-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+@font-face{
+    font-family: 'Eina02';
+    src: url('../fonts/Eina02-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face{
+    font-family: 'Eina02';
+    src: url('../fonts/Eina02-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+@font-face{
+    font-family: 'Eina02';
+    src: url('../fonts/Eina02-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+@font-face{
+    font-family: 'Eina03';
+    src: url('../fonts/Eina03-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face{
+    font-family: 'Eina03';
+    src: url('../fonts/Eina03-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+@font-face{
+    font-family: 'Eina03';
+    src: url('../fonts/Eina03-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+@font-face{
+    font-family: 'Eina04';
+    src: url('../fonts/Eina04-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+// General styles
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Eina01', sans-serif;
+    scroll-behavior: smooth;
+    min-height: 100%;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    background: #F4F4F4;
+    background-attachment: fixed;
+}

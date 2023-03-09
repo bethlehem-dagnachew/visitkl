@@ -1,0 +1,150 @@
+.content{
+    width: 100vw;
+    height: fit-content;
+    background-color: $pure-white;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 65px;
+    &__title{
+        margin-top: 14px;
+    }
+    &__subtitle{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 31.05px;
+        text-align: center;
+        color: $mere-black;
+        margin-top: 9px;
+    }
+    &__search{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 22px;
+        margin-bottom: 27px;
+        &--bar{
+            width: 288px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid $light-grey;
+            border-radius: 10px;
+            position: relative;
+            &__magnifying{
+                position: absolute;
+                left: 12px;
+            }
+            &__input{
+                width: 70%;
+                border: none;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                font-size: 1.2rem;
+                line-height: 16.34px;
+                text-align: center;
+                color: $darker-grey;
+            }
+        }
+        &--calendar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 6px;
+        }
+    }
+}
+
+// Slider
+.container{
+    width: 100vw;
+    height: 625px;
+    overflow-x: scroll;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-left: 240px;
+}
+
+// Cards
+.container__card{
+    width: 303px;
+    height: 587px;
+    border: 1px solid $light-grey;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px;
+    &--title{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        h3{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 2rem;
+            line-height: 23.8px;
+            color: $mere-black;
+            margin-left: 12px;
+        }
+    }
+    &--location{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 10px;
+        p{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 15.12px;
+            color: $darkest-grey;
+            margin-left: 5px;
+            text-align: justify;
+        }
+    }
+    &--info{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 35px;
+        h4{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+            line-height: 19.65px;
+            color: $cherry-red;
+            text-align: justify;
+        }
+        p{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 21px;
+            color: $mere-black;
+            text-align: justify;
+            margin-top: 6px;
+            a{
+                color: $blue-default;
+                text-decoration: underline;
+            }
+        }
+    }
+}

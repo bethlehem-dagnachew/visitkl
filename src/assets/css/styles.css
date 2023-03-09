@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "Eina01";
+  src: url("../fonts/Eina01-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Eina01";
+  src: url("../fonts/Eina01-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Eina01";
+  src: url("../fonts/Eina01-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Eina02";
+  src: url("../fonts/Eina02-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Eina02";
+  src: url("../fonts/Eina02-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Eina02";
+  src: url("../fonts/Eina02-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Eina03";
+  src: url("../fonts/Eina03-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Eina03";
+  src: url("../fonts/Eina03-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Eina03";
+  src: url("../fonts/Eina03-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Eina04";
+  src: url("../fonts/Eina04-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Eina01", sans-serif;
+  scroll-behavior: smooth;
+  min-height: 100%;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background: #F4F4F4;
+  background-attachment: fixed;
+}
+
+header {
+  width: 100vw;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  z-index: 10;
+  position: absolute;
+  top: 0px;
+}
+
+main {
+  min-height: calc(100vh - 180px);
+  width: 100vw;
+  max-width: 100vw;
+  box-sizing: border-box;
+  min-width: 320px;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../src/images/kl_login_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+}
+.content__cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #252525;
+  opacity: 20%;
+}
+.content__container {
+  width: 364px;
+  height: 284px;
+  background: linear-gradient(180deg, rgba(22, 26, 30, 0.14) 11.09%, #161A1E 62.79%);
+  backdrop-filter: blur(2px);
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content__container--title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.42rem;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 6.5px;
+}
+.content__container--subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 36.39px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 6.5px;
+}
+.content__container--text {
+  width: 272px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.42rem;
+  line-height: 28.21px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.content__container--button {
+  width: 262px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #E51C21;
+  border: none;
+  border-radius: 21.33px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.42rem;
+  line-height: 21.33px;
+  color: #FFFFFF;
+  transition: all 0.25s ease-in-out;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,82 @@
+.content{
+    width: 100vw;
+    height: fit-content;
+    background-color: $pure-white;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+    position: relative;
+    &__reel{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    &__title{
+        font-family: 'Poppins', sans-serif;
+        font-weight:  600;
+        font-size: 2.5rem;
+        line-height: 37.5px;
+        color: $pure-white;
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 137px;
+        left: 25px;
+    }
+    &__profile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        gap: 8px;
+        bottom: 80px;
+        left: 28px;
+        &--info{
+            &__title{
+                font-family: 'Poppins', sans-serif;
+                font-weight:  600;
+                font-size: 1.3rem;
+                line-height: 19.5px;
+                color: $pure-white;
+                text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+            }
+            &__text{
+                font-family: 'Poppins', sans-serif;
+                font-weight:  500;
+                font-size: 1rem;
+                line-height: 15px;
+                color: $pure-white;
+                text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+            }
+            &__division{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 15px;
+                &--wrapper{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 5px;
+                    gap: 5px;
+                    p{
+                        font-family: 'Poppins', sans-serif;
+                        font-weight:  600;
+                        font-size: 1.2rem;
+                        line-height: 18px;
+                        color: $pure-white;
+                    }
+                }
+                &--hashtag{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight:  600;
+                    font-size: 1.2rem;
+                    line-height: 18px;
+                    color: $pure-white;
+                }
+            }
+        }
+    }
+}

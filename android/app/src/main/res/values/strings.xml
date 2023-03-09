@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">visitkl</string>
+    <string name="title_activity_main">visitkl</string>
+    <string name="package_name">com.visit.kl</string>
+    <string name="custom_url_scheme">com.visit.kl</string>
+</resources>
