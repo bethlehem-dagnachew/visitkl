@@ -4,10 +4,12 @@
         <a class="back" href="">
             <img src="@/assets/icons/chevron_back.svg" alt="chevron back" />
         </a>
-        <a class="header__left-what" href="./profile.html">
+        <div class="header__left-what" @click="profile">
+           
             <img src="@/assets/images/profile_pic.png" alt="profile picture" />
             <p>Hello,<br/><b>Nik Syazwan!</b></p>
-        </a>
+          
+        </div>
         <a class="header__right" href="./menu.html">
             <img src="@/assets/icons/menu.svg" alt="menu"/>
         </a>
@@ -101,6 +103,11 @@
 
 <script>
     export default {
+        methods:{
+            profile(){
+                this.$router.push({ path: 'profile' })
+            }
+        }
         
     }
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="main-profile-page">
     <div class="header-profile">
         <h1>Update Profile</h1>
         <a href="./login.html">
@@ -66,7 +66,7 @@
                 <img src="@/assets/icons/facebook_grey.svg" alt="facebook">
             </div>
         </section>
-        <div class="footer" >
+        <div class="footer-profile" >
             <div href="./home.html">
                 <img src="@/assets/icons/home_white.svg" alt="home icon"/>
             </div>
