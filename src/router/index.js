@@ -5,6 +5,13 @@ import Profile from '../views/Profile'
 import Login from '../views/Login'
 import WhatsOn from '../views/Whats-on'
 import ThingsToDo from '../views/ThingsToDo'
+import SignUp from '../views/SignUp'
+import Product from '../views/Product'
+import LoginPostSignup from '../views/LoginPostSignup'
+import Gallery from '../views/Gallery'
+import GalleryForm from '../components/GalleryForm'
+import GalleryOpen from '../components/GalleryOpen'
+import GalleryReels from '../components/GalleryReels'
 
 const routes = [
   {
@@ -37,6 +44,42 @@ const routes = [
     name: 'ThingsToDo',
     component: ThingsToDo
   },
+  {
+    path: '/signUp',
+    name: 'SignUp',
+    component: SignUp
+  },
+  {
+    path: '/product',
+    name: 'Product',
+    component: Product
+  },
+  {
+    path: '/loginPostSignup',
+    name: 'LoginPostSignup',
+    component: LoginPostSignup
+  },
+  {
+    path: '/gallery',
+    name: 'Gallery',
+    component: Gallery
+  },
+  {
+    path: '/galleryForm',
+    name: 'GalleryForm',
+    component: GalleryForm
+  },
+  {
+    path: '/galleryOpen',
+    name: 'GalleryOpen',
+    component: GalleryOpen
+  },
+  {
+    path: '/galleryReels',
+    name: 'GalleryReels',
+    component: GalleryReels
+  },
+  
   {
     path: '/about',
     name: 'about',

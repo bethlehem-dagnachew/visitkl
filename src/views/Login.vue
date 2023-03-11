@@ -1,9 +1,9 @@
 <template>
     <div>
-    <header>
+    <div class="headerrr-login">
         <img src="@/assets/logos/visitKL_logo1.png" alt="visitKL logo" />
-    </header>
-    <main>
+    </div>
+    <div class="main-login">
         <section class="content-login">
             <div class="content__cover"></div>
             <form class="content__container">
@@ -38,7 +38,7 @@
                 </p>
             </form>
         </section>
-    </main>
+    </div>
 
     </div>
 </template>

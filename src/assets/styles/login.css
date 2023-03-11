@@ -69,8 +69,8 @@ body {
   background-attachment: fixed;
 }
 
-header {
-  width: 100vw;
+.headerrr-login {
+  width: 100%;
   height: 180px;
   display: flex;
   align-items: center;
@@ -81,7 +81,7 @@ header {
   top: 0px;
 }
 
-main {
+.main-login {
   min-height: calc(100vh - 180px);
   width: 100vw;
   max-width: 100vw;
