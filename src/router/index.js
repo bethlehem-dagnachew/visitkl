@@ -12,6 +12,11 @@ import Gallery from '../views/Gallery'
 import GalleryForm from '../components/GalleryForm'
 import GalleryOpen from '../components/GalleryOpen'
 import GalleryReels from '../components/GalleryReels'
+import GalleryReelOpen from '../components/GalleryReelOpen'
+import GalleryFormThanks from '../components/GalleryFormThanks'
+import Faq from '../components/Faq'
+import Events from '../components/Events'
+import Error404 from '../components/Error404'
 
 const routes = [
   {
@@ -78,6 +83,31 @@ const routes = [
     path: '/galleryReels',
     name: 'GalleryReels',
     component: GalleryReels
+  },
+  {
+    path: '/galleryReelOpen',
+    name: 'GalleryReelOpen',
+    component: GalleryReelOpen
+  },
+  {
+    path: '/galleryFormThanks',
+    name: 'GalleryFormThanks',
+    component: GalleryFormThanks
+  },
+  {
+    path: '/events',
+    name: 'Events',
+    component: Events
+  },
+  {
+    path: '/faq',
+    name: 'Faq',
+    component: Faq
+  },
+  {
+    path: '/error404',
+    name: 'Error404',
+    component: Error404
   },
   
   {

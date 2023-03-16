@@ -1,51 +1,51 @@
 @font-face {
   font-family: "Eina01";
-  src: url("../fonts/Eina01-Regular.ttf") format("truetype");
+  src: url("@/assets/fonts/Eina01-Regular.ttf") format("truetype");
   font-weight: normal;
 }
 @font-face {
   font-family: "Eina01";
-  src: url("../fonts/Eina01-SemiBold.ttf") format("truetype");
+  src: url("@/assets/fonts/Eina01-SemiBold.ttf") format("truetype");
   font-weight: 600;
 }
 @font-face {
   font-family: "Eina01";
-  src: url("../fonts/Eina01-Bold.ttf") format("truetype");
+  src: url("@/assets/fonts/Eina01-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 @font-face {
   font-family: "Eina02";
-  src: url("../fonts/Eina02-Regular.ttf") format("truetype");
+  src: url("@/assets/fonts/Eina02-Regular.ttf") format("truetype");
   font-weight: normal;
 }
 @font-face {
   font-family: "Eina02";
-  src: url("../fonts/Eina02-SemiBold.ttf") format("truetype");
+  src: url("@/assets/fonts/Eina02-SemiBold.ttf") format("truetype");
   font-weight: 600;
 }
 @font-face {
   font-family: "Eina02";
-  src: url("../fonts/Eina02-Bold.ttf") format("truetype");
+  src: url("@/assets/fonts/Eina03-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 @font-face {
   font-family: "Eina03";
-  src: url("../fonts/Eina03-Regular.ttf") format("truetype");
+  src: url("@/assets/fonts/Eina02-Regular.ttf") format("truetype");
   font-weight: normal;
 }
 @font-face {
   font-family: "Eina03";
-  src: url("../fonts/Eina03-SemiBold.ttf") format("truetype");
+  src: url("@/assets/fonts/Eina03-SemiBold.ttf") format("truetype");
   font-weight: 600;
 }
 @font-face {
   font-family: "Eina03";
-  src: url("../fonts/Eina03-Bold.ttf") format("truetype");
+  src: url("@/assets/fonts/Eina03-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 @font-face {
   font-family: "Eina04";
-  src: url("../fonts/Eina04-Bold.ttf") format("truetype");
+  src: url("@/assets/fonts/Eina04-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 * {
@@ -69,15 +69,15 @@ body {
   background-attachment: fixed;
 }
 
-header {
-  width: 100vw;
+.header-faq {
+  width: 100%;
   height: 120px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   background-color: transparent;
   z-index: 10;
-  background-image: url("../src/images/main_background.png"), radial-gradient(101.05% 46.71% at 50% 50.86%, #E21118 0%, #AE0F13 100%);
+  background-image: url("@/assets/images/main_background.png"), radial-gradient(101.05% 46.71% at 50% 50.86%, #E21118 0%, #AE0F13 100%);
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
@@ -85,7 +85,7 @@ header {
   left: 0;
   right: 0;
 }
-header .back {
+.header-faq .back {
   position: absolute;
   left: 30px;
 }
@@ -122,17 +122,15 @@ header .back {
   right: 30px;
 }
 
-main {
-  height: 100vh;
-  width: 100vw;
-  max-width: 100vw;
+.main-faq {
+  height: 100%;
+  width: 100%;
   box-sizing: border-box;
-  min-width: 320px;
   position: relative;
 }
 
-.content {
-  width: 100vw;
+.content-faq {
+  width: 100%;
   height: fit-content;
   background-color: #FFFFFF;
   padding-top: 120px;
@@ -142,7 +140,7 @@ main {
   justify-content: center;
   padding-bottom: 65px;
 }
-.content__top {
+.content__top-faq {
   width: 100%;
   display: flex;
   align-items: center;
@@ -151,7 +149,7 @@ main {
   margin-top: 10px;
   margin-bottom: 12px;
 }
-.content__top--title {
+.content__top--title-faq {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 2.5rem;
@@ -190,7 +188,7 @@ main {
 }
 
 footer {
-  width: 100vw;
+  width: 100%;
   height: 60px;
   display: flex;
   align-items: center;
